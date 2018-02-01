@@ -5,6 +5,7 @@ TMUX_FILES="$DOTFILES/tmux"
 #source "$TMUX_FILES/config/shell.sh"
 #source "$TMUX_FILES/segments/lan_ip.sh"
 #source "$TMUX_FILES/segments/ifstat_sys.sh"
+source "$TMUX_FILES/segments/bpi.sh"
 
 segments=()
 
@@ -16,6 +17,7 @@ segments=()
   #segments+=($("$TMUX_FILES/segments/np_spotify_mac.script"))
 #fi
 
+segments+=($(bpi))
 segments+=($(rainbarf))
 
 echo $(printf " %s" "${segments[@]}")
