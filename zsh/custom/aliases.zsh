@@ -24,9 +24,11 @@ alias gc!="gc --amend"
 alias gca="git commit -S -v -a"
 alias gca!="gca --amend"
 alias gcam="git commit -S -a -m"
+alias gpp="git pull; git push"
 
-# Vim
-alias v="vim"
+# Emacs
+alias e="emacs -nw"
+alias ec="emacsclient"
 
 # File manager
 alias f="ranger"

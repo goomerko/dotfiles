@@ -20,3 +20,10 @@ source $ZSH/oh-my-zsh.sh
 
 # Load fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# asdf version manager
+$HOME/.asdf/asdf.sh
+$HOME/.asdf/completions/asdf.bash
