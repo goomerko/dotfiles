@@ -133,7 +133,8 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
-                         default
+                         solarized-light
+                         solarized-dark
                          spacemacs-dark
                          spacemacs-light)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
@@ -333,7 +334,7 @@ you should place your code here."
  '(cua-normal-cursor-color "#657b83")
  '(cua-overwrite-cursor-color "#b58900")
  '(cua-read-only-cursor-color "#859900")
- '(custom-enabled-themes (quote (default)))
+ '(custom-enabled-themes (quote (solarized-light)))
  '(custom-safe-themes
    (quote
     ("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" default)))
@@ -362,7 +363,7 @@ you should place your code here."
  '(hl-fg-colors
    (quote
     ("#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3" "#fdf6e3")))
- '(hl-paren-colors (quote ("#2aa198" "#b58900" "#268bd2" "#6c71c4" "#859900")))
+ '(hl-paren-colors (quote ("#2aa198" "#b58900" "#268bd2" "#6c71c4" "#859900")) t)
  '(magit-diff-use-overlays nil)
  '(nrepl-message-colors
    (quote
