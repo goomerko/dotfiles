@@ -5,7 +5,7 @@ export SHELL=${SHELL:-"/usr/local/bin/zsh"}
 export TERM="screen-256color"
 
 # editor
-export EDITOR="emacs -nw"
+export EDITOR="emacsclient"
 
 # locale
 export LC_ALL=en_US.UTF-8
