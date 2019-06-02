@@ -25,6 +25,7 @@ alias gca="git commit -S -v -a"
 alias gca!="gca --amend"
 alias gcam="git commit -S -a -m"
 alias gpp="git pull; git push"
+alias gst="git status"
 
 # Emacs
 alias e="emacs -nw"
@@ -33,5 +34,5 @@ alias ec="emacsclient"
 # File manager
 alias f="ranger"
 
-# Launch Python based HTTP Server
-alias serve="python -m SimpleHTTPServer"
+# Purge unused packages
+alias purge_packages="sudo apt remove --purge `deborphan --guess-all`; sudo apt remove --purge `deborphan --libdev`; sudo dpkg --purge $(deborphan --find-config)"
