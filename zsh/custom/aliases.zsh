@@ -11,6 +11,7 @@ alias a="ag"             # The Silver Searcher
 alias hs="history | a"   # History search
 alias tm="ps -ef | a"    # Process search
 alias get="curl -O"      # Get a file via cURL
+alias apt_update="sudo apt update; apt list --upgradable"
 
 # replace built-in grep with GNU grep if available
 command -v ggrep >/dev/null 2>&1 && alias grep="ggrep"
@@ -33,6 +34,3 @@ alias ec="emacsclient"
 
 # File manager
 alias f="ranger"
-
-# Purge unused packages
-alias purge_packages="sudo apt remove --purge `deborphan --guess-all`; sudo apt remove --purge `deborphan --libdev`; sudo dpkg --purge $(deborphan --find-config)"
