@@ -27,6 +27,8 @@ alias gca!="gca --amend"
 alias gcam="git commit -a -m"
 alias gpp="git pull; git push"
 alias gst="git status"
+alias gl="git log --graph --abbrev-commit --date-order --format=format:'%Cblue%h%Creset%C(bold red)%d%Creset %s <%an> %Cgreen(%ar)%Creset' --all"
+
 
 # Emacs
 alias e="emacs -nw"
