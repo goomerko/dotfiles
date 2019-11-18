@@ -15,7 +15,7 @@ export PATH=/usr/local/opt/python@2/bin:$PATH
 export PATH=$HOME/perl5/bin/:$PATH
 export PATH=$HOME/.local/bin:$PATH
 
-plugins=(git)
+plugins=(git asdf)
 
 # Load Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
@@ -32,3 +32,7 @@ $HOME/.asdf/completions/asdf.bash
 
 # Direnv switcher
 eval "$(direnv hook zsh)"
+
+# zsh conf
+set opt AUTO_CD
+bindkey -v
