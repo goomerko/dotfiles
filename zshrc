@@ -32,7 +32,3 @@ $HOME/.asdf/completions/asdf.bash
 
 # Direnv switcher
 eval "$(direnv hook zsh)"
-
-# zsh conf
-set opt AUTO_CD
-bindkey -v

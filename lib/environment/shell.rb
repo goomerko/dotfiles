@@ -16,6 +16,8 @@ module Environment
       else
         say "Installing oh-my-zsh"
         system %{git clone https://github.com/robbyrussell/oh-my-zsh.git #{path}}
+        say "Installing oh-my-zsh plugins"
+        system %{git clone https://github.com/zsh-users/zsh-autosuggestions #{path}/custom/plugins/zsh-autosuggestions}
       end
     end
 

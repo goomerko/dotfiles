@@ -20,11 +20,11 @@ command -v ggrep >/dev/null 2>&1 && alias grep="ggrep"
 command -v gsed >/dev/null 2>&1 && alias sed="gsed"
 
 # Git
-alias gc="git commit -S -v"
+alias gc="git commit"
 alias gc!="gc --amend"
-alias gca="git commit -S -v -a"
+alias gca="git commit -a"
 alias gca!="gca --amend"
-alias gcam="git commit -S -a -m"
+alias gcam="git commit -a -m"
 alias gpp="git pull; git push"
 alias gst="git status"
 
