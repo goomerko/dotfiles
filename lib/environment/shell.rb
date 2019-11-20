@@ -1,6 +1,8 @@
 module Environment
   class Shell
     include Environment::Utils
+    DOTFILES = File.join(ENV.fetch('HOME'), 'Code', 'dotfiles')
+    ZSH_CUSTOM = File.join(DOTFILES, 'zsh', 'custom')
 
     attr_reader :path
 
@@ -17,9 +19,9 @@ module Environment
         say "Installing oh-my-zsh"
         system %{git clone https://github.com/robbyrussell/oh-my-zsh.git #{path}}
         say "Installing oh-my-zsh plugins"
-        system %{git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions}
-        system %{git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions}
-        system %{git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search}
+        system %{git clone https://github.com/zsh-users/zsh-autosuggestions #{ZSH_CUSTOM}/plugins/zsh-autosuggestions}
+        system %{git clone https://github.com/zsh-users/zsh-completions #{ZSH_CUSTOM}/plugins/zsh-completions}
+        system %{git clone https://github.com/zsh-users/zsh-history-substring-search #{ZSH_CUSTOM}/plugins/zsh-history-substring-search}
       end
     end
 
