@@ -14,6 +14,7 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/usr/local/opt/python@2/bin:$PATH
 export PATH=$HOME/perl5/bin/:$PATH
 export PATH=$HOME/.local/bin:$PATH
+export PATH=/snap/bin:$PATH
 
 plugins=(git asdf zsh-autosuggestions zsh-completions zsh-history-substring-search)
 
