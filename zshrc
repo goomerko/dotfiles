@@ -5,6 +5,7 @@ export DISABLE_AUTO_UPDATE="true"
 export DISABLE_AUTO_TITLE="true"
 export DOTFILES=$HOME/Code/dotfiles
 export ZSH_CUSTOM=$DOTFILES/zsh/custom
+export XAUTHORITY=$HOME/.Xauthority
 
 # path
 export PATH=/usr/X11/bin:$PATH
