@@ -29,8 +29,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$PATH:$HOME/.rvm/bin"
 
 # asdf version manager
-$HOME/.asdf/asdf.sh
-$HOME/.asdf/completions/asdf.bash
+. $HOME/.asdf/asdf.sh
 
 # Direnv switcher
 eval "$(direnv hook zsh)"
