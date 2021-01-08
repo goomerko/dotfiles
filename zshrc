@@ -33,3 +33,5 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # Direnv switcher
 eval "$(direnv hook zsh)"
+
+source /etc/zsh_command_not_found
