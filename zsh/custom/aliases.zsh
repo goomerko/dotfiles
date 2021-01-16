@@ -12,6 +12,7 @@ alias hs="history | a"   # History search
 alias tm="ps -ef | a"    # Process search
 alias get="curl -O"      # Get a file via cURL
 alias apt_update="sudo apt update; apt list --upgradable"
+alias dpkg_list_packages_by_size="dpkg-query --show --showformat='${Installed-Size}\t${Package}\n' | sort -rh | head -25 | awk '{print $1/1024, $2}'"
 
 # replace built-in grep with GNU grep if available
 command -v ggrep >/dev/null 2>&1 && alias grep="ggrep"
