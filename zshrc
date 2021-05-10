@@ -39,3 +39,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 . /etc/zsh_command_not_found
+
+export GOPATH=/home/goomerko/Code/golang
