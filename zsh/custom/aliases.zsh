@@ -31,9 +31,5 @@ alias gst="git status"
 alias gl="git log --graph --abbrev-commit --date-order --format=format:'%Cblue%h%Creset%C(bold red)%d%Creset %s <%an> %Cgreen(%ar)%Creset' --all"
 
 
-# Emacs
-alias e="emacs -nw"
-alias ec="emacsclient"
-
 # File manager
 alias f="ranger"
